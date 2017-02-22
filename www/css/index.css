@@ -2,6 +2,13 @@
     text-align: center;
 }
 img{
-    align:center;
+    align: center;
+    width: 70%;
+}
+a{
+    max-width: 18%;
+    max-height: 18%; 
+}
+main{
     width: 100%;
 }
