@@ -48,3 +48,4 @@ function aud_play_pause1() {
     var myAudio = document.getElementById("118");
     myAudio.play();
 }
+//$('#img1').append('<embed id="embed_player" src="118.m4a" autostart="false" hidden="true"></embed>');

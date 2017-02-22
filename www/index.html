@@ -37,6 +37,13 @@
         <link href="js/libs/jquery-mobile/jquery.mobile.min.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <title>Kissy</title>
+        <!--<script type="text/javascript">
+            $(document).ready(function () {
+                $('#118').click(function () {
+                    $('#img1').append('<embed id="embed_player" src="118.m4" autostart="false" hidden="true"></embed>');
+                });
+            });
+        </script> -->
     </head>
     <body>
         <div data-role="page" id="home">
@@ -47,30 +54,35 @@
             </div>
             <div data-role="main" class="ui-content">
                 <div data-role="controlgroup" data-type="horizontal">
-                    <a href="#pageone" class="ui-btn ui-btn-inline ui-corner-all" style="background-image:'img/1.png'" data-effetto-audio="118.m4a">
-                        <img src="img/1.png" alt=""/>
+                    <a id="img1" href="#pageone" class="ui-btn ui-btn-inline ui-corner-all" >
+                        <img id="118" src="img/1.png" alt=""/><br>
                         <audio controls id="myAudio">
                             <source src="118.m4a" type='audio/MPEG'>
                         </audio>
-                        </a>          
-                    <a href="#pageone" class="ui-btn ui-btn-inline ui-corner-all"><img src="img/2.jpg" alt=""/>
-                    <audio controls id="myAudio">
+                    </a>          
+                    <a href="118.m4a"  class="ui-btn ui-btn-inline ui-corner-all">
+                        <img src="img/2.jpg" alt=""/><br>
+                        <audio controls id="myAudio">
                             <source src="Kissy 1.m4a" type='audio/MPEG'>
                         </audio></a>
-                    <a href="#pageone" class="ui-btn ui-btn-inline ui-corner-all"><img src="img/3.jpg" alt=""/>
-                    <audio controls id="myAudio">
+                    <a href="#pageone" class="ui-btn ui-btn-inline ui-corner-all">
+                        <img src="img/3.jpg" alt=""/><br>
+                        <audio controls id="myAudio">
                             <source src="Kissy Tiburtina.m4a" type='audio/MPEG'>
                         </audio></a><br>
-                    <a href="#pageone" class="ui-btn ui-btn-inline ui-corner-all"><img src="img/4.png" alt=""/>
-                    <audio controls id="myAudio">
+                    <a href="#pageone" class="ui-btn ui-btn-inline ui-corner-all">
+                        <img src="img/4.png" alt=""/><br>
+                        <audio controls id="myAudio">
                             <source src="Kissy Arpa.m4a" type='audio/MPEG'>
                         </audio></a>          
-                    <a href="#pageone" class="ui-btn ui-btn-inline ui-corner-all"><img src="img/5.png" alt=""/>
-                    <audio controls id="myAudio">
+                    <a href="#pageone" class="ui-btn ui-btn-inline ui-corner-all">
+                        <img src="img/5.png" alt=""/><br>
+                        <audio controls id="myAudio">
                             <source src="Kissy 2.m4a" type='audio/MPEG'>
                         </audio></a>
-                    <a href="#pageone" class="ui-btn ui-btn-inline ui-corner-all"><img src="img/6.jpg" alt=""/>
-                    <audio controls id="myAudio">
+                    <a href="#pageone" class="ui-btn ui-btn-inline ui-corner-all">
+                        <img src="img/6.jpg" alt=""/><br>
+                        <audio controls id="myAudio">
                             <source src="Kissy Scimmie.m4a" type='audio/MPEG'>
                         </audio></a><br>
                     <a href="#pageone" class="ui-btn ui-btn-inline ui-corner-all"><img src="img/7.png" alt=""/></a>          

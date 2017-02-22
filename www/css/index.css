@@ -6,9 +6,15 @@ img{
     width: 70%;
 }
 a{
-    max-width: 18%;
-    max-height: 18%; 
+    max-width: 16%;
+    max-height: 16%; 
 }
 main{
     width: 100%;
+}
+.img1{
+    background-image: 'img/1.png';
+}
+audio{
+ width:150%;
 }
