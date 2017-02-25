@@ -19,23 +19,51 @@
 -->
 <html>
     <head>
-        <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
-            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-        Some notes:
-            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <script src="js/libs/jquery/jquery.min.js" type="text/javascript"></script>
-        <script src="js/libs/jquery-mobile/jquery.mobile.min.js" type="text/javascript"></script>
-        <link href="js/libs/jquery-mobile/jquery.mobile.min.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" type="text/css" href="css/index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript">
+            $('#wrap').append('<embed id="embed_player" src="118.m4a" autostart="false" hidden="true"></embed>');
+            $('#wrap').append('<embed id="embed_player" src="Kissy 1.m4a" autostart="false" hidden="true"></embed>');
+            $('#wrap').append('<embed id="embed_player" src="Kissy Tiburtina.m4a" autostart="false" hidden="true"></embed>');
+            $('#wrap').append('<embed id="embed_player" src="Kissy Arpa.m4a" autostart="false" hidden="true"></embed>');
+            $('#wrap').append('<embed id="embed_player" src="Kissy 2.m4a" autostart="false" hidden="true"></embed>');
+            $('#wrap').append('<embed id="embed_player" src="Kissy Scimmie.m4a" autostart="false" hidden="true"></embed>');
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#track1').click(function () {
+                    $('#wrap').append('<embed id="embed_player" src="118.m4a" autostart="false" hidden="true"></embed>');
+                });
+            });
+            $(document).ready(function () {
+                $('#track2').click(function () {
+                    $('#wrap').append('<embed id="embed_player" src="Kissy 1.m4a" autostart="false" hidden="true"></embed>');
+                });
+            });
+            $(document).ready(function () {
+                $('#track3').click(function () {
+                    $('#wrap').append('<embed id="embed_player" src="Kissy Tiburtina.m4a" autostart="false" hidden="true"></embed>');
+                });
+            });
+            $(document).ready(function () {
+                $('#track4').click(function () {
+                    $('#wrap').append('<embed id="embed_player" src="Kissy Arpa.m4a" autostart="false" hidden="true"></embed>');
+                });
+            });
+            $(document).ready(function () {
+                $('#track5').click(function () {
+                    $('#wrap').append('<embed id="embed_player" src="Kissy 2.m4a" autostart="false" hidden="true"></embed>');
+                });
+            });
+            $(document).ready(function () {
+                $('#track6').click(function () {
+                    $('#wrap').append('<embed id="embed_player" src="Kissy Scimmie.m4a" autostart="false" hidden="true"></embed>');
+                });
+            });
+            
+        </script>
         <title>Kissy</title>
         <!--<script type="text/javascript">
             $(document).ready(function () {
@@ -46,49 +74,49 @@
         </script> -->
     </head>
     <body>
+
         <div data-role="page" id="home">
             <div data-role="header">
-                <h1>YOURS KISSY</h1>
-                <p><img src="img/kissy.jpg"/></p>
+                <h1> LA TUA KISSY</h1>
+            </div>
+            <div data-role="main" class="ui-content" > 
+                <p>Clicca sull'immagine per sentire gli audio!</p>
+                <a href="#audio" class="ui-corner-all">
+                    <img class="top" src="img/kissy.jpg"/>
+                </a>
+                <br>
                 <p>Per avere Kissy sempre con te!</p>
             </div>
-            <div data-role="main" class="ui-content">
-                <div data-role="controlgroup" data-type="horizontal">
-                    <a id="img1" href="#pageone" class="ui-btn ui-btn-inline ui-corner-all" >
-                        <img id="118" src="img/1.png" alt=""/><br>
-                        <audio controls id="myAudio">
-                            <source src="118.m4a" type='audio/MPEG'>
-                        </audio>
-                    </a>          
-                    <a href="118.m4a"  class="ui-btn ui-btn-inline ui-corner-all">
-                        <img src="img/2.jpg" alt=""/><br>
-                        <audio controls id="myAudio">
-                            <source src="Kissy 1.m4a" type='audio/MPEG'>
-                        </audio></a>
-                    <a href="#pageone" class="ui-btn ui-btn-inline ui-corner-all">
-                        <img src="img/3.jpg" alt=""/><br>
-                        <audio controls id="myAudio">
-                            <source src="Kissy Tiburtina.m4a" type='audio/MPEG'>
-                        </audio></a><br>
-                    <a href="#pageone" class="ui-btn ui-btn-inline ui-corner-all">
-                        <img src="img/4.png" alt=""/><br>
-                        <audio controls id="myAudio">
-                            <source src="Kissy Arpa.m4a" type='audio/MPEG'>
-                        </audio></a>          
-                    <a href="#pageone" class="ui-btn ui-btn-inline ui-corner-all">
-                        <img src="img/5.png" alt=""/><br>
-                        <audio controls id="myAudio">
-                            <source src="Kissy 2.m4a" type='audio/MPEG'>
-                        </audio></a>
-                    <a href="#pageone" class="ui-btn ui-btn-inline ui-corner-all">
-                        <img src="img/6.jpg" alt=""/><br>
-                        <audio controls id="myAudio">
-                            <source src="Kissy Scimmie.m4a" type='audio/MPEG'>
-                        </audio></a><br>
-                    <a href="#pageone" class="ui-btn ui-btn-inline ui-corner-all"><img src="img/7.png" alt=""/></a>          
-                    <a href="#pageone" class="ui-btn ui-btn-inline ui-corner-all"><img src="img/7.png" alt=""/></a>
-                    <a href="#pageone" class="ui-btn ui-btn-inline ui-corner-all"><img src="img/7.png" alt=""/></a>
+            <div data-role="footer">
+                <h3>&copy; 2017 Jonathan Pallini</h3>
+            </div>
+        </div>
+        <div data-role="page" id="audio">
+            <div data-role="header">
+                <h1>Audio</h1>
+            </div>
+            <div id="wrap">&nbsp;</div>
+            <div data-role="main" class="ui-content" id="paginaaudio">
+                <p>This is the best of Kissy</p>
+                <div data-role="controlgroup" data-type="horizontal" class="imm">
+                        <img class="ui-btn ui-btn-inline ui-corner-all" name="track1" src="img/1.png" border="0" id="track1" alt="" />
+                        <!--   <audio controls id="myAudio">
+                               <source src="118.m4a" type='audio/MPEG'>
+                           </audio> -->       
+                   <img class="ui-btn ui-btn-inline ui-corner-all" name="track2" src="img/2.jpg" border="0" id="track2" alt="" />
+                   <img class="ui-btn ui-btn-inline ui-corner-all" name="track3" src="img/3.jpg" border="0" id="track3" alt="" />
                 </div>
+                <div data-role="controlgroup" data-type="horizontal">
+                    <img class="ui-btn ui-btn-inline ui-corner-all" name="track4" src="img/4.png" border="0" id="track4" alt="" />        
+                    <img class="ui-btn ui-btn-inline ui-corner-all" name="track5" src="img/5.png" border="0" id="track5" alt="" />
+                    <img class="ui-btn ui-btn-inline ui-corner-all" name="track6" src="img/6.jpg" border="0" id="track6" alt="" />
+                </div>
+                <div data-role="controlgroup" data-type="horizontal">
+                <img class="ui-btn ui-btn-inline ui-corner-all" name="track7" src="img/7.png" border="0" id="track7" alt="" />
+                <img class="ui-btn ui-btn-inline ui-corner-all" name="track7" src="img/7.png" border="0" id="track7" alt="" />
+                <img class="ui-btn ui-btn-inline ui-corner-all" name="track7" src="img/7.png" border="0" id="track7" alt="" />
+                </div>
+                <br> <a href="#home">Home</a>
             </div>
             <div data-role="footer">
                 <h3>&copy; 2017 Jonathan Pallini</h3>
