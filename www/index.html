@@ -24,45 +24,39 @@
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
         <script type="text/javascript">
-            $('#wrap').append('<embed id="embed_player" src="118.m4a" autostart="false" hidden="true"></embed>');
-            $('#wrap').append('<embed id="embed_player" src="Kissy 1.m4a" autostart="false" hidden="true"></embed>');
-            $('#wrap').append('<embed id="embed_player" src="Kissy Tiburtina.m4a" autostart="false" hidden="true"></embed>');
-            $('#wrap').append('<embed id="embed_player" src="Kissy Arpa.m4a" autostart="false" hidden="true"></embed>');
-            $('#wrap').append('<embed id="embed_player" src="Kissy 2.m4a" autostart="false" hidden="true"></embed>');
-            $('#wrap').append('<embed id="embed_player" src="Kissy Scimmie.m4a" autostart="false" hidden="true"></embed>');
+            /*
+             $('#wrap').append('<embed id="embed_player" src="118.m4a" autostart="false" hidden="true"></embed>');
+             $('#wrap').append('<embed id="embed_player" src="Kissy 1.m4a" autostart="false" hidden="true"></embed>');
+             $('#wrap').append('<embed id="embed_player" src="Kissy Tiburtina.m4a" autostart="false" hidden="true"></embed>');
+             $('#wrap').append('<embed id="embed_player" src="Kissy Arpa.m4a" autostart="false" hidden="true"></embed>');
+             $('#wrap').append('<embed id="embed_player" src="Kissy 2.m4a" autostart="false" hidden="true"></embed>');
+             $('#wrap').append('<embed id="embed_player" src="Kissy Scimmie.m4a" autostart="false" hidden="true"></embed>');
+             */
         </script>
         <script type="text/javascript">
             $(document).ready(function () {
                 $('#track1').click(function () {
                     $('#wrap').append('<embed id="embed_player" src="118.m4a" autostart="false" hidden="true"></embed>');
                 });
-            });
-            $(document).ready(function () {
                 $('#track2').click(function () {
                     $('#wrap').append('<embed id="embed_player" src="Kissy 1.m4a" autostart="false" hidden="true"></embed>');
                 });
-            });
-            $(document).ready(function () {
                 $('#track3').click(function () {
                     $('#wrap').append('<embed id="embed_player" src="Kissy Tiburtina.m4a" autostart="false" hidden="true"></embed>');
                 });
-            });
-            $(document).ready(function () {
                 $('#track4').click(function () {
                     $('#wrap').append('<embed id="embed_player" src="Kissy Arpa.m4a" autostart="false" hidden="true"></embed>');
                 });
-            });
-            $(document).ready(function () {
                 $('#track5').click(function () {
                     $('#wrap').append('<embed id="embed_player" src="Kissy 2.m4a" autostart="false" hidden="true"></embed>');
                 });
-            });
-            $(document).ready(function () {
                 $('#track6').click(function () {
                     $('#wrap').append('<embed id="embed_player" src="Kissy Scimmie.m4a" autostart="false" hidden="true"></embed>');
                 });
+                $("#linkHome").click(function () {
+                    $("#wrap").html("");
+                });
             });
-            
         </script>
         <title>Kissy</title>
         <!--<script type="text/javascript">
@@ -99,12 +93,12 @@
             <div data-role="main" class="ui-content" id="paginaaudio">
                 <p>This is the best of Kissy</p>
                 <div data-role="controlgroup" data-type="horizontal" class="imm">
-                        <img class="ui-btn ui-btn-inline ui-corner-all" name="track1" src="img/1.png" border="0" id="track1" alt="" />
-                        <!--   <audio controls id="myAudio">
-                               <source src="118.m4a" type='audio/MPEG'>
-                           </audio> -->       
-                   <img class="ui-btn ui-btn-inline ui-corner-all" name="track2" src="img/2.jpg" border="0" id="track2" alt="" />
-                   <img class="ui-btn ui-btn-inline ui-corner-all" name="track3" src="img/3.jpg" border="0" id="track3" alt="" />
+                    <img class="ui-btn ui-btn-inline ui-corner-all" name="track1" src="img/1.png" border="0" id="track1" alt="" />
+                    <!--   <audio controls id="myAudio">
+                           <source src="118.m4a" type='audio/MPEG'>
+                       </audio> -->       
+                    <img class="ui-btn ui-btn-inline ui-corner-all" name="track2" src="img/2.jpg" border="0" id="track2" alt="" />
+                    <img class="ui-btn ui-btn-inline ui-corner-all" name="track3" src="img/3.jpg" border="0" id="track3" alt="" />
                 </div>
                 <div data-role="controlgroup" data-type="horizontal">
                     <img class="ui-btn ui-btn-inline ui-corner-all" name="track4" src="img/4.png" border="0" id="track4" alt="" />        
@@ -112,11 +106,11 @@
                     <img class="ui-btn ui-btn-inline ui-corner-all" name="track6" src="img/6.jpg" border="0" id="track6" alt="" />
                 </div>
                 <div data-role="controlgroup" data-type="horizontal">
-                <img class="ui-btn ui-btn-inline ui-corner-all" name="track7" src="img/7.png" border="0" id="track7" alt="" />
-                <img class="ui-btn ui-btn-inline ui-corner-all" name="track7" src="img/7.png" border="0" id="track7" alt="" />
-                <img class="ui-btn ui-btn-inline ui-corner-all" name="track7" src="img/7.png" border="0" id="track7" alt="" />
+                    <img class="ui-btn ui-btn-inline ui-corner-all" name="track7" src="img/7.png" border="0" id="track7" alt="" />
+                    <img class="ui-btn ui-btn-inline ui-corner-all" name="track7" src="img/7.png" border="0" id="track7" alt="" />
+                    <img class="ui-btn ui-btn-inline ui-corner-all" name="track7" src="img/7.png" border="0" id="track7" alt="" />
                 </div>
-                <br> <a href="#home">Home</a>
+                <br> <a href="#home" id="linkHome">Home</a>
             </div>
             <div data-role="footer">
                 <h3>&copy; 2017 Jonathan Pallini</h3>
